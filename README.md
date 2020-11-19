@@ -16,7 +16,10 @@
 
 
 
-API  
+
+## API  
+
+Leaving the endpoint as stats, we return a JSON object giving the stats of the specified lake/river.
 
     lake/{lakeName}/stats
     river/{riverName}/stats
