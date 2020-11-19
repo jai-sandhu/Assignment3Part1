@@ -7,7 +7,7 @@
 - Snow fall report API in Manitoba
 - Toilets near me within Manitoba, distance and direction API
 - Winnipeg Harvest, donation tracking API
-  
+- 
   
   Parameters: Name of the body of water, and a day of the month. 
   
