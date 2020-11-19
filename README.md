@@ -1,6 +1,6 @@
 # Assignment3Part1
 ## API Description  
-Our API is an automatic real-time method of finding statistics for any lake or river in Manitoba.
+The Water Body Manitoba API lets you find statistics for any lake or river in Manitoba.
 Statistics we provide includes, temperature, water levels, and algae levels.
 
 
@@ -24,3 +24,11 @@ These do be resources doe
     
 
 ## Sample Request and Resposnse 
+
+Example:
+    
+    river/redriver/stats?date=11-19-2020
+    
+Return:
+    
+    {"name":"Red River","Water level":0.68","Geodetic metric (m)":222.01"}
