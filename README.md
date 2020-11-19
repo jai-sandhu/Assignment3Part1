@@ -31,4 +31,4 @@ Example:
     
 Return:
     
-    {"name":"Red River","Water level":0.68","Geodetic metric (m)":222.01"}
+    {"name":"Red River","Water level":0.68","Geodetic metric (m)":"222.01", "date":11-19-2020"}
