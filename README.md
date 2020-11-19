@@ -8,3 +8,7 @@
 - toilets near me 
 - 
   
+  
+  
+
+/river/{rivername}/stats
