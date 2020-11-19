@@ -1,7 +1,6 @@
 # Assignment3Part1
-
 ## API Description  
-  This do be a description 
+  
 
 
 ## API  
@@ -15,12 +14,12 @@ List of query parameters:
     lake/{lakeName}/stats
     river/{riverName}/stats
     river/{riverName}/stats?stats1=val&stats2=val
-
+    river/{riverName}/stats?date=03-22-2019
 
 
 ## Resources (Formatted as JSON)  
 
 These do be resources doe
-    river/{riverName}/stats?date=03-22-2019
+    
 
 ## Sample Request and Resposnse 
