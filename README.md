@@ -19,7 +19,8 @@ List of query parameters:
 
 ## Resources (Formatted as JSON)  
 
-These do be resources doe
+-look at sunrise sunset api in response
+-mostly just what is returned
     
 
 ## Sample Request and Resposnse 
