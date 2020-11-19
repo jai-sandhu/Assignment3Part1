@@ -27,5 +27,5 @@ List of query parameters:
 ##
     lake/{lakeName}/stats
     river/{riverName}/stats
-    river/{riverName}/stats?date=03/22/2019
+    river/{riverName}/stats?date=03-22-2019
 
