@@ -11,7 +11,7 @@
 
 
 ## API Description  
-  
+  This do be a description 
 
 ## Endpoint and Paramaters  
 
@@ -26,18 +26,6 @@ Leaving the endpoint as stats, we return a JSON object giving the stats of the s
 
 ## Resources (Formatted as JSON)  
 
+These do be resources doe
+
 ## Sample Request and Resposnse 
-
-
-  
-
-
-
-
-
-  
-  Parameters: Name of the body of water, and a day of the month. 
-  
-  Returns: Statistics of that body for that day
-
-
