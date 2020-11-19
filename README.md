@@ -15,7 +15,6 @@ List of query parameters:
     lake/{lakeName}/stats
     river/{riverName}/stats
     river/{riverName}/stats?stats1=val&stats2=val
-    river/{riverName}/stats?date=03-22-2019
 
 
 ## Resources (Formatted as JSON)  
