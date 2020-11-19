@@ -25,3 +25,11 @@ These do be resources doe
     river/{riverName}/stats?date=03-22-2019
 
 ## Sample Request and Resposnse 
+
+Example:
+    
+    river/redriver/stats?date=11-19-2020
+    
+Return:
+    
+    {"name":"Red River","Water level":0.68","Geodetic metric (m)":222.01"}
