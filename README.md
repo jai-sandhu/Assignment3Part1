@@ -15,11 +15,8 @@
 
 
 
-<<<<<<< HEAD
 ## API Description  
   This do be a description 
-=======
->>>>>>> eedca42810da98190f440658eb36e598e72ad203
 
 
 ## API  
@@ -32,7 +29,6 @@ List of query parameters:
 ##
     lake/{lakeName}/stats
     river/{riverName}/stats
-<<<<<<< HEAD
     river/{riverName}/stats?stats1=val&stats2=val
 
 
@@ -40,8 +36,6 @@ List of query parameters:
 ## Resources (Formatted as JSON)  
 
 These do be resources doe
-=======
     river/{riverName}/stats?date=03-22-2019
->>>>>>> eedca42810da98190f440658eb36e598e72ad203
 
 ## Sample Request and Resposnse 
