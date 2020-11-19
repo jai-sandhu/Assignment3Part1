@@ -2,10 +2,11 @@
 
 ## Ideas 
 - Winnipeg transit API
-- Levels of minerals in the red river (iron, etc.)
-- covid cases/deaths
-- monthly snow 
-- toilets near me 
+- Levels of minerals in various bodies of water in Manitoba (For example, Red River or Lake Winnipeg)
+- Covid statistics in Manitoba
+- Snow fall report API in Manitoba
+- Toilets near me within Manitoba, distance and direction API
+- Winnipeg Harvest, donation tracking API
 - 
   
   
