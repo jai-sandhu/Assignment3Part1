@@ -14,7 +14,7 @@
 
 
 
-/lake/{lakeName}/stats
+/lake/{lakeName}/stats  
 /river/{riverName}/stats
 
 
