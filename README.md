@@ -1,7 +1,7 @@
 # Assignment3Part1
 ## API Description  
-The Water Body Manitoba API lets you find statistics for any lake or river in Manitoba.
-Statistics we provide includes, temperature, water levels, and algae levels.
+The Water Body Manitoba API allows researches or developers to find statistics about any lake or river in Manitoba.
+We provide accurately reported temperatures, water levels, and algae levels since the year 2000.
 
 
 ## API  
