@@ -14,9 +14,6 @@
 
 
 
-/lake/{lakeName}/stats  
-/river/{riverName}/stats
-
-
-
-/river/{riverName}/stats?stats1=val&stats2=val
+    /lake/{lakeName}/stats  
+    /river/{riverName}/stats
+    /river/{riverName}/stats?stats1=val&stats2=val
