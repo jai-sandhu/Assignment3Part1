@@ -1,6 +1,7 @@
 # Assignment3Part1
 ## API Description  
-  
+Our API is an automatic real-time method of finding statistics for any lake or river in Manitoba.
+Statistics we provide includes, temperature, water levels, and algae levels.
 
 
 ## API  
