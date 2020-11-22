@@ -1,33 +1,49 @@
 # Assignment3Part1
 ## API Description  
-The Water Body Manitoba API allows researches or developers to find statistics about any lake or river in Manitoba.
-We provide accurately reported temperatures, water levels, and algae levels since the year 2000.
+The Water Body Manitoba API allows researches or developers to find statistics about any river or lake from within Manitoba.
+We provide accurately reported temperatures, a geodetic metric and water levels since the year 2000.
 
+## Endpoints and Parameters
 
-## API  
-
-Leaving the endpoint as stats, we return a JSON object giving the stats of the specified lake/river.
+EndPoints:
+- Type of the body of water (river or lake)
+- Name of the river or lake in Manitoba
 
 List of query parameters:  
-- date (string) in a MM-DD-YYYY format
+- date (string): The date of the statistic, MM-DD-YYYY format. ***Required***
+- Temperature (integer): 0 or 1 (1 by default). 0 for fahrenheit 1 for celsius. *Optional*
+- Water level (integer): 0 or 1 (1 by default). 0 for feet 1 for meters.  *Optional*
+- Geodetic metic (integer): 0 or 1 (1 by default). 0 for feet 1 for meters. *Optional*
 
+Request format:
 ##
-    lake/{lakeName}/stats
-    river/{riverName}/stats
-    river/{riverName}/stats?stats1=val&stats2=val
-
+    BodyType/WaterBodyName?date=MM-DD-YYYY&temperature={0or1}&waterLevel={0or1}
+    
+A body type is either a river or lake.
 
 ## Resources (Formatted as JSON)  
 
--look at sunrise sunset api in response
--mostly just what is returned
-    
+Optional parameters with the value 'false' do not return any information.
+
+By default, optional parameters are true if not specified.
+
+After a request
+{
+    "Name":"Red River"
+    "Temperature":"15"
+    "Water Level":"10"
+}
 
 ## Sample Request and Resposnse 
 
 Example:
+
+To list all staticstics of a body of water on a specific day,
+##
+    {bodyType}/{waterBodyName}?date=01-02-2000
     
-    river/redriver/stats?date=11-19-2020
+
+    river/redriver?date=11-19-2020
     
 Return:
     
