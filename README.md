@@ -45,7 +45,7 @@ Returns:
     
     {"Name":"Red River", "Water level":"0.68", "Temperature":"17","Geodetic Metric":"222.01"}
     
-Modifying the paramers into the imperial system:
+Modifying the parameters into the imperial system:
 ##
     river/redriver?date=11-19-2020&temperature=0&waterLevel=0&geodetic=0
     
