@@ -26,6 +26,7 @@ A body type is either a river or lake.
 A response is received as:
 ##
     {
+        "Type":"River",
         "Name":"Red River",
         "Temperature":"15",
         "Water level":"10.01",
@@ -36,13 +37,18 @@ A response is received as:
 
 Example:
 
-To list all staticstics of a body of water on a specific day,
+To receive statistics about the Red River on November 19th, 2000,
 ##
-    {bodyType}/{waterBodyName}?date=01-02-2000
-    
-
     river/redriver?date=11-19-2020
     
-Return:
+Returns:
     
-    {"name":"Red River","Water level":0.68","Geodetic metric (m)":"222.01", "date":"11-19-2020"}
+    {"Name":"Red River", "Water level":"0.68", "Temperature":"17","Geodetic Metric":"222.01"}
+    
+Modifying the paramers into the imperial system:
+##
+    river/redriver?date=11-19-2020&temperature=0&waterLevel=0&geodetic=0
+    
+Returns:
+
+    {"Name":"Red River", "Water level":"2.23", "Temperature":"62.6","Geodetic Metric":"728.37"}
