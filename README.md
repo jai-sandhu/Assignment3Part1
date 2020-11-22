@@ -27,12 +27,14 @@ Optional parameters with the value 'false' do not return any information.
 
 By default, optional parameters are true if not specified.
 
-After a request
-{
-    "Name":"Red River"
-    "Temperature":"15"
-    "Water Level":"10"
-}
+A response is received as:
+##
+    {
+        "Name":"Red River",
+        "Temperature":"15",
+        "Water level":"10.01",
+        "Geodetic metric":"222.01"
+    }
 
 ## Sample Request and Resposnse 
 
