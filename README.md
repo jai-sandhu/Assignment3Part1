@@ -37,7 +37,7 @@ A response is received as:
 
 Example:
 
-To receive statistics about the Red River on November 19th, 2000,
+To receive statistics about the Red River on November 19th, 2000:
 ##
     river/redriver?date=11-19-2020
     
