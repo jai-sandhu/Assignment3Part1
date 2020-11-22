@@ -23,10 +23,6 @@ A body type is either a river or lake.
 
 ## Resources (Formatted as JSON)  
 
-Optional parameters with the value 'false' do not return any information.
-
-By default, optional parameters are true if not specified.
-
 A response is received as:
 ##
     {
