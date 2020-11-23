@@ -62,7 +62,7 @@ Example:
 
 To receive statistics about the Red River on November 19th, 2000:
 ##
-    river/redriver?date=11-19-2020
+    river/redriver?date=11-19-2000
     
 Returns:
     
