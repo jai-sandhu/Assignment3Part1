@@ -67,12 +67,12 @@ To receive statistics about the Red River on November 19th, 2000:
     
 Returns:
     
-    {"water name":"Red River", "water level":"0.68", "depth":"10.09", "temperature":"17.0", "geodetic Metric":"222.01", "altitude":231, "pH value":"7.48"}
+    { "results" : {"water name":"Red River", "water level":"0.68", "depth":"10.09", "temperature":"17.0", "geodetic Metric":"222.01", "altitude":231, "pH value":"7.48"}, "msg": "The query is successful!"}
     
 Modifying the parameters into the imperial system:
 ##
-    river/redriver?date=11-19-2020&system=0
+    river/redriver?date=11-19-2000&system=0
     
 Returns:
 
-    {"water name":"Red River", "water level":"2.23", "depth":"33.10","temperature":"62.6","geodetic Metric":"728.37", "altitude":758, "pH value":"7.48"}
+    { "results" : {"water name":"Red River", "water level":"2.23", "depth":"33.10","temperature":"62.6","geodetic Metric":"728.37", "altitude":758, "pH value":"7.48"}, "msg": "The query is successful!"}
