@@ -14,21 +14,20 @@ List of query parameters:
 |Name|Type|Input Format |Request|
 | ---- | ---- | ---- | ---- |
 |Date |String |MM-DD-YYYY| ***Required***|
-|System |String| 0 or 1 (1 by default)|*Optional*|
-
-notes: 0 for Fahrenheit/feet, 1 for celsius/meters.
+|System |String| 0 or 1 (1 by default). 1 for Metric system (Celsius/Meters), 0 for Imperial (Fahrenheit/Feet). |*Optional*|
 
 Return parameters:
 
 |Name|Type|Description|
 | ---- | ---- | ---- |
 |msg|String|operation step
-|water name| String |name of body of water
-|temperature |String|temperature of water body
-|water level |String|level of water relative to itself
-|geodetic metric|String|
-|altitude |String|altitude of the body of water
-|pH value |String|average pH value of water body
+|water name| String |Name of body of water
+|water level |String (2 decimals)|Average level of water relative to itself
+|temperature |Integer|Average temperature of water body
+|geodetic metric|Integer|Geodetic measurement of water
+|altitude |Integer|Average altitude of the body of water
+|pH value |String|Average pH value of water body
+|depth|
 
 Request format:
 ##
@@ -42,10 +41,11 @@ A response is received as:
 ##
 ```
 {
+    "results":
       {
             "Type":"River",
             "water name":"Red River",
-            "temperature":"15",
+            "temperature":15,
             "water level":"10.01",
             "geodetic metric":"222.01",
             "altitude":"231",
