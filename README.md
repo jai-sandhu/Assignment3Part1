@@ -5,7 +5,7 @@ provided are accurately reported temperatures, a geodetic metric, and water leve
 
 ## Endpoints and Parameters
 
-#### EndPoints:
+#### Endpoints:
 - Type of the body of water (river or lake)
 - Name of the river or lake in Manitoba
 
