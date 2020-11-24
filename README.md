@@ -1,7 +1,7 @@
 # Assignment3Part1
 ## API Description  
-The Water Body Manitoba API allows researches or developers to find statistics about any river or lake within Manitoba.
-provided are accurately reported temperatures, a geodetic metric and water levels since the year 2000.
+The Water Body Manitoba API allows researchers or developers to find statistics about any river or lake within Manitoba.
+provided are accurately reported temperatures, a geodetic metric, and water levels since the year 2000.
 
 ## Endpoints and Parameters
 
@@ -25,7 +25,7 @@ provided are accurately reported temperatures, a geodetic metric and water level
 |water level |String (2 decimals)|Average level of water relative to itself
 |depth |String (2 decimals)|Average depth of the water
 |geodetic metric|String (2 decimals)|Geodetic measurement of water
-|temperature |String (1 decimal)|Average temperature of water body
+|temperature |String (1 decimal)|Average temperature of the water body
 |altitude |Integer|Average altitude of the body of water
 |pH value |String|Average pH value of water body
 
@@ -33,7 +33,7 @@ provided are accurately reported temperatures, a geodetic metric and water level
 ##
     BodyType/WaterBodyName?date=MM-DD-YYYY&system={0or1}
     
-The body type is either a river or lake.
+BodyType is either a river or a lake.
 
 WaterBodyName defines the name of the river or lake.
 
@@ -57,7 +57,7 @@ A response is received as:
 }
 ```
 
-## Sample Request and Resposnse 
+## Sample Request and Response 
 
 Example:
 
