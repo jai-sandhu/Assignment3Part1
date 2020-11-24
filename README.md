@@ -5,7 +5,7 @@ provided are accurately reported temperatures, a geodetic metric and water level
 
 ## Endpoints and Parameters
 
-EndPoints:
+#### EndPoints:
 - Type of the body of water (river or lake)
 - Name of the river or lake in Manitoba
 
@@ -16,7 +16,7 @@ List of query parameters:
 |Date |String |MM-DD-YYYY (Today's date by default)| *Optional*|
 |System |String| 0 or 1 (1 by default). 1 for Metric system (Celsius/Meters), 0 for Imperial (Fahrenheit/Feet). |*Optional*|
 
-Return parameters:
+#### Return parameters:
 
 |Name|Type|Description|
 | ---- | ---- | ---- |
@@ -29,7 +29,7 @@ Return parameters:
 |altitude |Integer|Average altitude of the body of water
 |pH value |String|Average pH value of water body
 
-Request format:
+#### Request format:
 ##
     BodyType/WaterBodyName?date=MM-DD-YYYY
     
