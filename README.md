@@ -9,7 +9,7 @@ provided are accurately reported temperatures, a geodetic metric and water level
 - Type of the body of water (river or lake)
 - Name of the river or lake in Manitoba
 
-List of query parameters:  
+#### List of query parameters:  
 
 |Name|Type|Input Format |Request|
 | ---- | ---- | ---- | ---- |
@@ -31,7 +31,7 @@ List of query parameters:
 
 #### Request format:
 ##
-    BodyType/WaterBodyName?date=MM-DD-YYYY
+    BodyType/WaterBodyName?date=MM-DD-YYYY&system={0or1}
     
 The body type is either a river or lake.
 
