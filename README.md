@@ -13,27 +13,29 @@ List of query parameters:
 
 |Name|Type|Input Format |Request|
 | ---- | ---- | ---- | ---- |
-|Date |String |MM-DD-YYYY| ***Required***|
+|Date |String |MM-DD-YYYY (Today's date by default)| *Optional*|
 |System |String| 0 or 1 (1 by default). 1 for Metric system (Celsius/Meters), 0 for Imperial (Fahrenheit/Feet). |*Optional*|
 
 Return parameters:
 
 |Name|Type|Description|
 | ---- | ---- | ---- |
-|msg|String|operation step
-|water name| String |Name of body of water
+|msg|String|Success or failure of response
+|name|String|Returning the name of the body of water
 |water level |String (2 decimals)|Average level of water relative to itself
+|depth |String (2 decimals)|Average depth of the water
 |geodetic metric|String (2 decimals)|Geodetic measurement of water
-|temperature |Integer|Average temperature of water body
+|temperature |String (1 decimal)|Average temperature of water body
 |altitude |Integer|Average altitude of the body of water
 |pH value |String|Average pH value of water body
-|depth|
 
 Request format:
 ##
     BodyType/WaterBodyName?date=MM-DD-YYYY
     
 The body type is either a river or lake.
+
+WaterBodyName defines the name of the river or lake.
 
 ## Resources (Formatted as JSON)  
 
@@ -43,12 +45,12 @@ A response is received as:
 {
     "results":
       {
-            "Type":"River",
-            "water name":"Red River",
-            "temperature":15,
+            "name":"Red River",
             "water level":"10.01",
+            "depth":"13.05",
             "geodetic metric":"222.01",
-            "altitude":"231",
+            "temperature":"15.0",
+            "altitude":231,
             "pH value":"7.48"
       },
       "msg":"The query is successful!"
@@ -65,7 +67,7 @@ To receive statistics about the Red River on November 19th, 2000:
     
 Returns:
     
-    {"water name":"Red River", "water level":"0.68", "temperature":"17", "geodetic Metric":"222.01", "altitude":"231", "pH value":"7.48"}
+    {"water name":"Red River", "water level":"0.68", "depth":"10.09", "temperature":"17.0", "geodetic Metric":"222.01", "altitude":231, "pH value":"7.48"}
     
 Modifying the parameters into the imperial system:
 ##
@@ -73,4 +75,4 @@ Modifying the parameters into the imperial system:
     
 Returns:
 
-    {"water name":"Red River", "water level":"2.23", "temperature":"62.6","geodetic Metric":"728.37", "altitude":"758", "pH value":"7.48"}
+    {"water name":"Red River", "water level":"2.23", "depth":"33.10","temperature":"62.6","geodetic Metric":"728.37", "altitude":758, "pH value":"7.48"}
