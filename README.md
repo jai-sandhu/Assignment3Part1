@@ -13,7 +13,7 @@ provided are accurately reported temperatures, a geodetic metric, and water leve
 
 |Name|Type|Input Format |Request|
 | ---- | ---- | ---- | ---- |
-|Date |String |MM-DD-YYYY (Today's by default)| *Optional*|
+|Date |String |MM-DD-YYYY (Today's date by default)| *Optional*|
 |System |String| 0 or 1 (1 by default). 1 for Metric system (Celsius/Meters), 0 for Imperial (Fahrenheit/Feet). |*Optional*|
 
 #### Return parameters:
