@@ -13,8 +13,6 @@ List of query parameters:
 
 |Name|Type|Input Format |Request|
 | ---- | ---- | ---- | ---- |
-|BodyType |String |String| ***Required***|
-|WaterBodyName |String |String| ***Required***|
 |Date |String |MM-DD-YYYY| ***Required***|
 |System |String| 0 or 1 (1 by default)|*Optional*|
 
