@@ -1,7 +1,7 @@
 # Assignment3Part1
 ## API Description  
 The Water Body Manitoba API allows researches or developers to find statistics about any river or lake within Manitoba.
-We provide accurately reported temperatures, a geodetic metric and water levels since the year 2000.
+provided are accurately reported temperatures, a geodetic metric and water levels since the year 2000.
 
 ## Endpoints and Parameters
 
@@ -13,9 +13,10 @@ List of query parameters:
 
 |Name|Type|Input Format |Request|
 | ---- | ---- | ---- | ---- |
-|date |String |MM-DD-YYYY| ***Required***|
-|temperature |String| 0 or 1 (1 by default)|*Optional*|
-|water level |String| 0 or 1 (1 by default)|*Optional*|
+|BodyType |String |String| ***Required***|
+|WaterBodyName |String |String| ***Required***|
+|Date |String |MM-DD-YYYY| ***Required***|
+|System |String| 0 or 1 (1 by default)|*Optional*|
 
 notes: 0 for Fahrenheit/feet, 1 for celsius/meters.
 
@@ -24,16 +25,16 @@ Return parameters:
 |Name|Type|Description|
 | ---- | ---- | ---- |
 |msg|String|operation step
-|water name| String |
+|water name| String |name of body of water
 |temperature |String|temperature of water body
-|water level |String|
-|geodetic metic|String|
-|altitude |String|water's altitude
-|pH value |String|
+|water level |String|level of water relative to itself
+|geodetic metric|String|
+|altitude |String|altitude of the body of water
+|pH value |String|average pH value of water body
 
 Request format:
 ##
-    BodyType/WaterBodyName?date=MM-DD-YYYY&temperature={0or1}&waterLevel={0or1}
+    BodyType/WaterBodyName?date=MM-DD-YYYY
     
 The body type is either a river or lake.
 
@@ -70,7 +71,7 @@ Returns:
     
 Modifying the parameters into the imperial system:
 ##
-    river/redriver?date=11-19-2020&temperature=0&waterLevel=0&geodetic=0
+    river/redriver?date=11-19-2020&system=0
     
 Returns:
 
