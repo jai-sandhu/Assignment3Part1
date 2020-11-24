@@ -23,8 +23,8 @@ Return parameters:
 |msg|String|operation step
 |water name| String |Name of body of water
 |water level |String (2 decimals)|Average level of water relative to itself
+|geodetic metric|String (2 decimals)|Geodetic measurement of water
 |temperature |Integer|Average temperature of water body
-|geodetic metric|Integer|Geodetic measurement of water
 |altitude |Integer|Average altitude of the body of water
 |pH value |String|Average pH value of water body
 |depth|
