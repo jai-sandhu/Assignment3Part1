@@ -10,11 +10,19 @@ provided are accurately reported temperatures, a geodetic metric, and water leve
 
 |Name|Type|Input Format |Request|
 | ---- | ---- | ---- | ---- |
+|lat |integer | -90 to 90| **required**|
+|long |integer | -180 to 180| **required**|
 |Date |String |MM-DD-YYYY (Today's date by default)| *Optional*|
 |System |String| 0 or 1 (1 by default). 1 for Metric system (Celsius/Meters), 0 for Imperial (Fahrenheit/Feet). |*Optional*|
 
 ### Endpoints: __/lake/lakeName__
   
+  |Name|Type|Input Format |Request|
+| ---- | ---- | ---- | ---- |
+|lakeName |String |lakeName| **Required**|
+|Date |String |MM-DD-YYYY (Today's date by default)| *Optional*|
+|System |String| 0 or 1 (1 by default). 1 for Metric system (Celsius/Meters), 0 for Imperial (Fahrenheit/Feet). |*Optional*|
+
   lakeName is the name of the lake you are trying to get information for
 
 #### Return parameters:
