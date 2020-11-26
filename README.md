@@ -23,8 +23,6 @@ provided are accurately reported temperatures, a geodetic metric, and water leve
 |Date |String |MM-DD-YYYY (Today's date by default)| *Optional*|
 |System |String| 0 or 1 (1 by default). 1 for Metric system (Celsius/Meters), 0 for Imperial (Fahrenheit/Feet). |*Optional*|
 
-  lakeName is the name of the lake you are trying to get information for
-
 #### Return parameters:
 
 |Name|Type|Description|
