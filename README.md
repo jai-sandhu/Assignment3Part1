@@ -1,7 +1,6 @@
 # Assignment3Part1
 ## API Description  
-The Water Body Manitoba API allows researchers or developers to find statistics about any river or lake within Manitoba.
-provided are accurately reported temperatures, a geodetic metric, and water levels since the year 2000.
+The Lake Manitoba API allows researchers or developers to find statistics about any lake within Manitoba province. It can provided a series of data, including accurately reported temperatures, a geodetic metric, and water levels since the year 2000.
 
 ## Endpoints and Parameters
 
