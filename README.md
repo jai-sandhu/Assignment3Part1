@@ -53,6 +53,8 @@ A response is received as:
       {
             "id":"CA6505_1"
             "name":"lake Manitoba",
+            "lat":"-83",
+            "long":"111",
             "water level":"10.01",
             "depth":"13.05",
             "temperature":"15.0",
@@ -73,7 +75,7 @@ To receive statistics about the Red River on November 19th, 2000:
     
 Returns:
     
-    { "results" : {"id":"CA6505_1","name":"Lake Manitoba", "water level":"0.68", "depth":"10.09", "temperature":"17.0", "altitude":231, "pH value":"7.48", "msg": "The query is successful!"}
+    { "results" : {"id":"CA6505_1","name":"Lake Manitoba","lat":"-33","long":"119", "water level":"0.68", "depth":"10.09", "temperature":"17.0", "altitude":231, "pH value":"7.48", "msg": "The query is successful!"}
     
 Modifying the parameters into the imperial system:
 ##
@@ -81,4 +83,4 @@ Modifying the parameters into the imperial system:
     
 Returns:
 
-    { "results" : {"id":"CA6505_1","name":"Lake Manitoba", "water level":"2.23", "depth":"33.10", "temperature":"62.6", "altitude":758, "pH value":"7.48", "msg": "The query is successful!"}
+    { "results" : {"id":"CA6505_1","name":"Lake Manitoba", "lat":"-33","long":"119", "water level":"2.23", "depth":"33.10", "temperature":"62.6", "altitude":758, "pH value":"7.48", "msg": "The query is successful!"}
