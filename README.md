@@ -28,6 +28,8 @@ The Lake Manitoba API allows researchers or developers to find statistics about 
 | ---- | ---- | ---- |
 |id|String|ID of specific marine body
 |name|String|Returning the name of the body of water
+|lat|Integer|Latitude of the lake you are getting information for
+|long|Integer|Longitude of the lake you are getting information for
 |water level |String (2 decimals)|Average level of water relative to itself
 |depth |String (2 decimals)|Average depth of the water
 |temperature |String (1 decimal)|Average temperature of the water body
