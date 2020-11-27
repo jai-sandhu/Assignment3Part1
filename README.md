@@ -28,8 +28,8 @@ The Lake Manitoba API allows researchers or developers to find statistics about 
 | ---- | ---- | ---- |
 |id|String|ID of specific marine body
 |name|String|Returning the name of the body of water
-|lat|Integer|Latitude of the lake you are getting information for
-|long|Integer|Longitude of the lake you are getting information for
+|lat|Floating Point|Latitude of the lake you are getting information for
+|long|Floating Point|Longitude of the lake you are getting information for
 |water level |String (2 decimals)|Average level of water relative to itself
 |depth |String (2 decimals)|Average depth of the water
 |temperature |String (1 decimal)|Average temperature of the water body
@@ -75,14 +75,14 @@ To receive statistics about the Red River on November 19th, 2000:
     
 Returns:
     
-    { "results" : {"id":"CA6505_1","name":"Lake Manitoba","lat":"-33","long":"119", "water level":"0.68", "depth":"10.09", "temperature":"17.0", "altitude":231, "pH value":"7.48", "msg": "The query is successful!"}
+    { "results" : {"id":"CA6505_1","name":"Lake Manitoba","lat":54.668079,"long":-101.542809, "water level":"0.68", "depth":"10.09", "temperature":"17.0", "altitude":231, "pH value":"7.48", "msg": "The query is successful!"}
     
 Modifying the parameters into the imperial system or using lake endpoint with latitude and longitude coordinates:
 ##
     lake/LakeManitoba?date=11-19-2000&system=0
-    lake?lat=50.6263&long=98.3988&date=11-19-2000&system=0
+    lake?lat=54.668079&long=-101.542809&date=11-19-2000&system=0
     
 Both queries return:
 
-    { "results" : {"id":"CA6505_1","name":"Lake Manitoba", "lat":"-33","long":"119", "water level":"2.23", "depth":"33.10", "temperature":"62.6", "altitude":758, "pH value":"7.48", "msg": "The query is successful!"}
+    { "results" : {"id":"CA6505_1","name":"Lake Manitoba", "lat":54.668079,"long":-101.542809, "water level":"2.23", "depth":"33.10", "temperature":"62.6", "altitude":758, "pH value":"7.48", "msg": "The query is successful!"}
 
