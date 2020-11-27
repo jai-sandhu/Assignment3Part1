@@ -1,6 +1,6 @@
 # Assignment3Part1
 ## API Description  
-The Lake Manitoba API allows researchers or developers to find statistics about any lake within Manitoba province. It can provided a series of data, including accurately reported temperatures, and water levels since the year 2000.
+The Lake Manitoba API allows researchers or developers to find statistics about any lake within the province of Manitoba. This API can provide a series of data, including accurately reported temperatures, depths, Ph, and water levels since the year 2000. All statistics are recorded daily from all lakes in Manitoba, through sampling and measurement reports. 
 
 ## Endpoints and Parameters
 
@@ -9,14 +9,14 @@ The Lake Manitoba API allows researchers or developers to find statistics about 
 
 |Name|Type|Input Format |Request|
 | ---- | ---- | ---- | ---- |
-|lat |integer | -90 to 90| **required**|
-|long |integer | -180 to 180| **required**|
+|lat |integer | -90 to 90| **Required**|
+|long |integer | -180 to 180| **Required**|
 |Date |String |MM-DD-YYYY (Today's date by default)| *Optional*|
 |System |String| 0 or 1 (1 by default). 1 for Metric system (Celsius/Meters), 0 for Imperial (Fahrenheit/Feet). |*Optional*|
 
 ### Endpoints: __/lake/lakeName__
   
-  |Name|Type|Input Format |Request|
+|Name|Type|Input Format |Request|
 | ---- | ---- | ---- | ---- |
 |lakeName |String |lakeName| **Required**|
 |Date |String |MM-DD-YYYY (Today's date by default)| *Optional*|
