@@ -67,7 +67,7 @@ A response is received as:
 
 ## Sample Request and Response 
 
-Example:
+Examples:
 
 To receive statistics about the Red River on November 19th, 2000:
 ##
@@ -77,10 +77,12 @@ Returns:
     
     { "results" : {"id":"CA6505_1","name":"Lake Manitoba","lat":"-33","long":"119", "water level":"0.68", "depth":"10.09", "temperature":"17.0", "altitude":231, "pH value":"7.48", "msg": "The query is successful!"}
     
-Modifying the parameters into the imperial system:
+Modifying the parameters into the imperial system or using lake endpoint with latitude and longitude coordinates:
 ##
     lake/LakeManitoba?date=11-19-2000&system=0
+    lake?lat=50.6263&long=98.3988&date=11-19-2000&system=0
     
 Returns:
 
     { "results" : {"id":"CA6505_1","name":"Lake Manitoba", "lat":"-33","long":"119", "water level":"2.23", "depth":"33.10", "temperature":"62.6", "altitude":758, "pH value":"7.48", "msg": "The query is successful!"}
+
