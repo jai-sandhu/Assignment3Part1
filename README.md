@@ -42,6 +42,10 @@ The Lake Manitoba API allows researchers or developers to find statistics about 
     lake/{lakeName}?date=MM-DD-YYYY&system={0or1}
     
     lakeName is the name of the lake you are getting information for
+    
+    lake?lat={value}&long={value}&date=MM-DD-YYYY&system={0or1}
+    
+    Latitude and longitude are the coordinates for the lake that you would like information for.
 
 ## Resources (Formatted as JSON)  
 
