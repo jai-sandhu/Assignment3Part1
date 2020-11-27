@@ -82,7 +82,7 @@ Modifying the parameters into the imperial system or using lake endpoint with la
     lake/LakeManitoba?date=11-19-2000&system=0
     lake?lat=50.6263&long=98.3988&date=11-19-2000&system=0
     
-Returns:
+Both queries return:
 
     { "results" : {"id":"CA6505_1","name":"Lake Manitoba", "lat":"-33","long":"119", "water level":"2.23", "depth":"33.10", "temperature":"62.6", "altitude":758, "pH value":"7.48", "msg": "The query is successful!"}
 
