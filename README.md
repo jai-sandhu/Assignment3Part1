@@ -4,7 +4,7 @@ The Lake Manitoba API allows researchers or developers to find statistics about 
 
 ## Endpoints and Parameters
 
-### Endpoints: __/lake__
+### Endpoint: __/lake__
 #### List of query parameters:  
 
 |Name|Type|Input Format |Request|
@@ -14,11 +14,11 @@ The Lake Manitoba API allows researchers or developers to find statistics about 
 |Date |String |MM-DD-YYYY (Today's date by default)| *Optional*|
 |System |String| 0 or 1 (1 by default). 1 for Metric system (Celsius/Meters), 0 for Imperial (Fahrenheit/Feet). |*Optional*|
 
-### Endpoints: __/lake/lakeName__
+### Endpoint: __/lake/lakeName__
   
 |Name|Type|Input Format |Request|
 | ---- | ---- | ---- | ---- |
-|lakeName |String |lakeName| **Required**|
+|lakeName **(path parameter)** |String |lakeName| **Required**|
 |Date |String |MM-DD-YYYY (Today's date by default)| *Optional*|
 |System |String| 0 or 1 (1 by default). 1 for Metric system (Celsius/Meters), 0 for Imperial (Fahrenheit/Feet). |*Optional*|
 
