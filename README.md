@@ -37,15 +37,14 @@ The Lake Manitoba API allows researchers or developers to find statistics about 
 |pH value |String|Average pH value of water body
 |msg|String|Success or failure of response
 
-#### Request format:
-##
+### Request format:
     lake/{lakeName}?date=MM-DD-YYYY&system={0or1}
     
-    lakeName is the name of the lake you are getting information for
+**lakeName** is the name of the lake you are getting information for
     
     lake?lat={value}&long={value}&date=MM-DD-YYYY&system={0or1}
     
-    Latitude and longitude are the coordinates for the lake that you would like information for.
+**Latitude** and **longitude** are the coordinates for the lake that you would like information for.
 
 ## Resources (Formatted as JSON)  
 
@@ -73,7 +72,7 @@ A response is received as:
 
 Examples:
 
-To receive statistics about the Red River on November 19th, 2000:
+To receive statistics about Lake Manitoba on November 19th, 2000:
 ##
     lake/LakeManitoba?date=11-19-2000
     
@@ -83,8 +82,8 @@ Returns:
     
 Modifying the parameters into the imperial system or using lake endpoint with latitude and longitude coordinates:
 ##
-    lake/LakeManitoba?date=11-19-2000&system=0
-    lake?lat=54.668079&long=-101.542809&date=11-19-2000&system=0
+    1. lake/LakeManitoba?date=11-19-2000&system=0
+    2. lake?lat=54.668079&long=-101.542809&date=11-19-2000&system=0
     
 Both queries return:
 
